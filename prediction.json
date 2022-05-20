@@ -1,0 +1,16 @@
+{
+  "arbeitstage": [
+    {
+      "dayOfWeek": 1,
+      "hours": 4
+    },
+    {
+      "dayOfWeek": 3,
+      "hours": 8
+    },
+    {
+      "dayOfWeek": 5,
+      "hours": 4
+    }
+  ]
+}
