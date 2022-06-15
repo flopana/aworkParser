@@ -1,5 +1,5 @@
 {
-  "arbeitstage": [
+  "workDays": [
     {
       "dayOfWeek": 1,
       "hours": 4

@@ -48,14 +48,14 @@ def main():
         print(key.strftime("%d.%m.%Y") + " | " + str(round(workedDict[key], 2)))
         rowCounter += 1
 
-    arbeitstageFuerVorhersage = json.loads(open("prediction.json").read())["arbeitstage"]
+    workDaysForPrediction = json.loads(open("prediction.json").read())["workdays"]
     # If month for export is the actual month of executing this then add the prediction according to prediction.json
     if currentMonth == datetime.datetime.today().month:
         curr = datetime.datetime.today()
         daysLeft = calendar.monthrange(currentYear, currentMonth)[1] - keys[len(keys) - 1].day
         for i in range(daysLeft - 1):
             curr = datetime.datetime(year=curr.year, month=curr.month, day=curr.day + 1)
-            for tag in arbeitstageFuerVorhersage:
+            for tag in workDaysForPrediction:
                 if curr.isoweekday() == tag["dayOfWeek"]:
                     sheet.cell(column=1, row=rowCounter, value=curr.strftime("%d.%m.%Y"))
                     sheet.cell(column=2, row=rowCounter, value=tag["hours"])
