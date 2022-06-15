@@ -6,11 +6,10 @@
 3. `cd` to the repository directory
 4. Fill out the predictions.json file
 5. `pip install -r requirements.txt`
-6. Visit awork.io to download your Excel export
+6. Visit awork.io `/time-tracking/my-day` to download your Excel export
     ![awork](https://i.imgur.com/ekQzlcJ.png)
 7. Put the Excel export in the `excel_sheets` directory
 8. Run `python main.py`
 9. Profit!
 
 Note: Ignore the warning about default style I don't know how to suppress it.
-
