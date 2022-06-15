@@ -48,7 +48,7 @@ def main():
         print(key.strftime("%d.%m.%Y") + " | " + str(round(workedDict[key], 2)))
         rowCounter += 1
 
-    workDaysForPrediction = json.loads(open("prediction.json").read())["workdays"]
+    workDaysForPrediction = json.loads(open("prediction.json").read())["workDays"]
     # If month for export is the actual month of executing this then add the prediction according to prediction.json
     if currentMonth == datetime.datetime.today().month:
         curr = datetime.datetime.today()
