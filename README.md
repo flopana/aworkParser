@@ -12,4 +12,4 @@
 8. Run `python main.py`
 9. Profit!
 
-Note: Ignore the warning about default style I don't know how to suppress it.
+**Note**: Ignore the warning about default style I don't know how to suppress it.
