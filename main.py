@@ -55,7 +55,7 @@ def main():
         print("Adding prediction...")
         curr = datetime.datetime.today()
         daysLeft = calendar.monthrange(currentYear, currentMonth)[1] - keys[len(keys) - 1].day
-        for i in range(daysLeft - 1):
+        for i in range(daysLeft):
             curr = datetime.datetime(year=curr.year, month=curr.month, day=curr.day + 1)
             for tag in workDaysForPrediction:
                 if curr.isoweekday() == tag["dayOfWeek"]:
